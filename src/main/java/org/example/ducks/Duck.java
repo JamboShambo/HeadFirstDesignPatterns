@@ -14,4 +14,8 @@ public class Duck {
         System.out.println("Display");
     }
 
+    public void fly() {
+        System.out.println("Display");
+    }
+
 }
