@@ -1,7 +1,7 @@
-package org.example.ducks;
+package org.example.chapter1strategypattern.duckexamples.duckclasses;
 
-import org.example.chapter1.duckbehaviour.fly.FlyWithWings;
-import org.example.chapter1.duckbehaviour.quack.Quack;
+import org.example.chapter1strategypattern.duckexamples.duckbehaviour.fly.FlyWithWings;
+import org.example.chapter1strategypattern.duckexamples.duckbehaviour.quack.Quack;
 
 public class MallardDuck extends Duck {
     public MallardDuck() {
