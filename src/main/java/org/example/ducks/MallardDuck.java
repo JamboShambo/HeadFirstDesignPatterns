@@ -1,9 +1,14 @@
 package org.example.ducks;
 
-public class MallardDuck extends Duck {
+import org.example.chapter1.duckbehaviour.fly.FlyWithWings;
+import org.example.chapter1.duckbehaviour.quack.Quack;
 
-    @Override
+public class MallardDuck extends Duck {
+    public MallardDuck() {
+        quackBehavior = new Quack();
+        flyBehavior = new FlyWithWings();
+    }
     public void display() {
-        System.out.println("Mallard Display");
+        System.out.println("I'm a real Mallard duck");
     }
 }
