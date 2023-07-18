@@ -32,4 +32,10 @@ F. Changes can unintentionally affect other ducks.
                     -> MuteQuack
                     -> Quack
                     -> Squeak
- 
+
+
+## Chapter 2
+
+### _Exercise: Sharpen your pencil page 42
+
+Based on our first implementation, which of the following apply? (Choose all that apply.)
