@@ -9,25 +9,25 @@ public class RunWeatherStation {
 
     public static void main(String[] args) {
 
-        WeatherData weatherData = new WeatherData();
-        CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
-        StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
-        ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
-        HeatIndexDisplay heatIndexDisplay = new HeatIndexDisplay(weatherData);
+        WeatherStation weatherStation = new WeatherStation();
+        CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherStation);
+        StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherStation);
+        ForecastDisplay forecastDisplay = new ForecastDisplay(weatherStation);
+        HeatIndexDisplay heatIndexDisplay = new HeatIndexDisplay(weatherStation);
 
 
-        weatherData.setMeasurements(80, 65, 30.4f);
-        weatherData.setMeasurements(82, 70, 29.2f);
-        weatherData.setMeasurements(78, 90, 29.2f);
+        weatherStation.setMeasurements(80, 65, 30.4f);
+        weatherStation.setMeasurements(82, 70, 29.2f);
+        weatherStation.setMeasurements(78, 90, 29.2f);
 
-        weatherData.removeObserver(forecastDisplay);
-        weatherData.setMeasurements(62, 90, 28.1f);
+        weatherStation.removeObserver(forecastDisplay);
+        weatherStation.setMeasurements(62, 90, 28.1f);
 
         System.out.println("");
         System.out.println("");
-        System.out.println("getTemperature: " + weatherData.getTemperature());
-        System.out.println("getHumidity: " + weatherData.getHumidity());
-        System.out.println("getPressure: " + weatherData.getPressure());
+        System.out.println("getTemperature: " + weatherStation.getTemperature());
+        System.out.println("getHumidity: " + weatherStation.getHumidity());
+        System.out.println("getPressure: " + weatherStation.getPressure());
 
     }
 }

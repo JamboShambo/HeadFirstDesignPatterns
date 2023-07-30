@@ -5,13 +5,13 @@ import org.example.chapter2observerpattern.weatherapp.interfaces.IObserver;
 
 import java.util.*;
 
-public class WeatherData implements IObservable {
+public class WeatherStation implements IObservable {
     private List<IObserver> observers;
     private float temperature;
     private float humidity;
     private float pressure;
 
-    public WeatherData() {
+    public WeatherStation() {
         observers = new ArrayList<IObserver>();
     }
 

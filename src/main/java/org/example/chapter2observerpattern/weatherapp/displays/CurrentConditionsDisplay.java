@@ -2,16 +2,16 @@ package org.example.chapter2observerpattern.weatherapp.displays;
 
 import org.example.chapter2observerpattern.weatherapp.interfaces.IDisplayElement;
 import org.example.chapter2observerpattern.weatherapp.interfaces.IObserver;
-import org.example.chapter2observerpattern.weatherapp.WeatherData;
+import org.example.chapter2observerpattern.weatherapp.WeatherStation;
 
 public class CurrentConditionsDisplay implements IObserver, IDisplayElement {
     private float temperature;
     private float humidity;
-    private WeatherData weatherData;
+    private WeatherStation weatherStation;
 
-    public CurrentConditionsDisplay(WeatherData weatherData) {
-        this.weatherData = weatherData;
-        weatherData.registerObserver(this);
+    public CurrentConditionsDisplay(WeatherStation weatherStation) {
+        this.weatherStation = weatherStation;
+        weatherStation.registerObserver(this);
     }
 
     public void update(float temperature, float humidity, float pressure) {

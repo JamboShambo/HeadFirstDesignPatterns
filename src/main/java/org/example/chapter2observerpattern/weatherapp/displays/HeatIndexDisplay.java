@@ -2,15 +2,15 @@ package org.example.chapter2observerpattern.weatherapp.displays;
 
 import org.example.chapter2observerpattern.weatherapp.interfaces.IDisplayElement;
 import org.example.chapter2observerpattern.weatherapp.interfaces.IObserver;
-import org.example.chapter2observerpattern.weatherapp.WeatherData;
+import org.example.chapter2observerpattern.weatherapp.WeatherStation;
 
 public class HeatIndexDisplay implements IObserver, IDisplayElement {
     float heatIndex = 0.0f;
-    private WeatherData weatherData;
+    private WeatherStation weatherStation;
 
-    public HeatIndexDisplay(WeatherData weatherData) {
-        this.weatherData = weatherData;
-        weatherData.registerObserver(this);
+    public HeatIndexDisplay(WeatherStation weatherStation) {
+        this.weatherStation = weatherStation;
+        weatherStation.registerObserver(this);
     }
 
     public void update(float t, float rh, float pressure) {
