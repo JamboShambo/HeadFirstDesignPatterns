@@ -39,3 +39,7 @@ F. Changes can unintentionally affect other ducks.
 ### _Exercise: Sharpen your pencil page 42
 
 Based on our first implementation, which of the following apply? (Choose all that apply.)
+ - We are coding to concrete implementations, not interfaces.
+ - For every new display we’ll need to alter this code.
+ - We have no way to add (or remove) display elements at runtime.
+ - The display elements don’t implement a common interface.
