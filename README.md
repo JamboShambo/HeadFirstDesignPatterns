@@ -69,3 +69,13 @@ Example
     -> ForecastDisplay
     -> HeatIndexDisplay
     -> StatisticsDisplay
+
+## Chapter 3 Decorator Pattern
+
+Conponent (Beverage)
+    -> ConcreteComponent(Dark Roast, Decaf etc etc)
+    -> CondimentDecorator(Milk, Soy etc etc)
+
+Beverage 
+    -> CondimentDecorator
+        -> Condiment
