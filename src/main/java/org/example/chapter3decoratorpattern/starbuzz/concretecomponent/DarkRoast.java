@@ -1,6 +1,6 @@
-package org.example.chapter3decoratorpattern.concretecomponent;
+package org.example.chapter3decoratorpattern.starbuzz.concretecomponent;
 
-import org.example.chapter3decoratorpattern.component.Beverage;
+import org.example.chapter3decoratorpattern.starbuzz.component.Beverage;
 
 public class DarkRoast extends Beverage {
     public DarkRoast() {
