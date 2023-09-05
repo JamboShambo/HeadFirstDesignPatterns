@@ -1,4 +1,6 @@
-package org.example.chapter3decoratorpattern.coffeeclasses;
+package org.example.chapter3decoratorpattern.concretecomponent;
+
+import org.example.chapter3decoratorpattern.component.Beverage;
 
 public class DarkRoast extends Beverage {
     public DarkRoast() {
@@ -6,6 +8,6 @@ public class DarkRoast extends Beverage {
     }
 
     public double cost() {
-        return .99;
+        return 1.0;
     }
 }

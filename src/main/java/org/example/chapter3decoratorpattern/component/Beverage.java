@@ -1,7 +1,7 @@
-package org.example.chapter3decoratorpattern.coffeeclasses;
+package org.example.chapter3decoratorpattern.component;
 
 public abstract class Beverage {
-    String description = "Tasty Beverage";
+    public String description;
 
     public String getDescription() {
         return description;

@@ -1,4 +1,6 @@
-package org.example.chapter3decoratorpattern.coffeeclasses;
+package org.example.chapter3decoratorpattern.concretecomponent;
+
+import org.example.chapter3decoratorpattern.component.Beverage;
 
 public class HouseBlend extends Beverage {
     public HouseBlend() {
@@ -6,6 +8,6 @@ public class HouseBlend extends Beverage {
     }
 
     public double cost() {
-        return .89;
+        return 1.0;
     }
 }
