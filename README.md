@@ -79,3 +79,24 @@ Conponent (Beverage)
 Beverage 
     -> CondimentDecorator
         -> Condiment
+
+
+## Chapter 4 Factory Pattern
+
+Product Classes
+    -> Pizza (Abstract)
+        -> NYCheesePizza (Concrete Classes)
+        -> NYVeggiePizza (Concrete Classes)
+        -> ChicagoCheesePizza (Concrete Classes)
+        -> ChicagoCheesePizza (Concrete Classes)
+
+Creator Classes 
+    -> PizzaStore (Abstract)
+        -> NYPizzaStore (Concrete Classes)
+        -> ChicagoPizzaStore (Concrete Classes)
+
+
+The Factory Method Pattern defines an interface
+for creating an object, but lets subclasses decide which
+class to instantiate. Factory Method lets a class defer
+instantiation to subclasses.
